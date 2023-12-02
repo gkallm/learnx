@@ -1,0 +1,198 @@
+:root {
+    --fontOp1: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    --fontOp2: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    --fontOp3: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --fontOp4: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: var(--fontOp1);
+}
+
+nav {
+    background-color: black;
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+#navlogo {
+    width: 15%;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#searchdiv {
+    display: flex;
+    height: 100%;
+}
+
+#search {
+    height: 100%;
+    border: 0;
+    outline: 2px gray solid;
+    padding-left: 5px;
+}
+
+#searchbutton {
+    height: 100%;
+    aspect-ratio: 1;
+    border: 0;
+    outline: 2px gray solid;
+}
+
+.nlinks {
+    margin-left: auto;
+    margin-right: 25px;
+    color: white;
+    height: 100%;
+    display: flex;
+    align-content: center;
+}
+
+.nlinks > a {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    font-size: 1.2em;
+    height: 100%;
+    margin-top: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: white;
+    text-decoration: none;
+}
+
+.nlinks > a:hover {
+    background-color: dimgray;
+}
+
+#profilepic {
+    height: 80%;
+    filter: invert(100%);
+}
+
+#homeheaddiv {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+#homeheadimg {
+    width: 130%;
+    height: calc(92vh - 140px); /*-16 px*/
+    object-fit: cover;
+    object-position: left 80%;
+    filter: blur(.3rem) brightness(0.6);
+    scale: 1.1;
+}
+
+#headimgtext {
+    position: absolute;
+    bottom: 20%;
+    left: 30px;
+    color: white;
+    font-size: 1.5em;
+}
+
+#actiondiv {
+    width: calc(100%-60px);
+    padding: 30px;
+    background-color: #ddd;
+    display: flex;
+    justify-content: space-around;
+}
+
+.actionbtn {
+    height: 60px;
+    width: 300px;
+    font-size: 1.3em;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+}
+
+#homecatalog {
+    padding: 50px;
+}
+
+/*
+#cardholder {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}*/
+
+#cardholder {
+    display: inline-grid;
+    width: 100%;
+    grid-template-columns: repeat(auto-fit, 30%);
+    justify-content: space-around;
+    grid-gap: 5%;
+}
+
+.card {
+    width: calc(95%);
+    background-color: black;
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 30px;
+    overflow-wrap: break-word;
+}
+
+.card > button {
+    margin-top: 15px;
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 1.4em;
+    color: white;
+    background-color: gray;
+}
+
+button:hover {
+    background-color: dimgray;
+    cursor: pointer;
+}
+
+#coursesdiv, #classesdiv {
+    width: calc(100%-60px);
+    padding: 50px;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 20px;
+}
+
+#columnhold {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10%;
+    padding-right: 10%;
+    font-size: 1.1em;
+}
+
+.column {
+    width: 50%;
+}
+
+#second {
+    text-align: center;
+}
+
+#third {
+    text-align: right;
+}
+
+#footerlogo {
+    width: 80%;
+}
