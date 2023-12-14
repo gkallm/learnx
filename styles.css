@@ -107,6 +107,9 @@ nav {
     background-color: #ddd;
     display: flex;
     justify-content: space-around;
+    :hover {
+        background-color: forestgreen;
+    }
 }
 
 .actionbtn {
@@ -153,12 +156,14 @@ nav {
     height: 50px;
     border-radius: 10px;
     font-size: 1.4em;
-    color: black;
-    background-color: floralwhite;
+    color: white;
+    background-color: green;
+    :hover {
+        background-color: black;
+    }
 }
 
 button:hover {
-    background-color: beige;
     cursor: pointer;
 }
 
