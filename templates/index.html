@@ -20,11 +20,11 @@
             <a href="courselist.html"><p>Courses</p></a>
             <a href="classlist.html"><p>Classes</p></a>
             <a href="about.html"><p>About</p></a>
-            <a href="profile.html"><img src="../images/account.jpg" alt="profile picture" id="profilepic"></a>
+            <a href="profile.html"><img src="{{ url_for('static', filename='images/account.jpg')}}" alt="profile picture" id="profilepic"></a>
         </div>
     </nav>
     <div id="homeheaddiv">
-        <img id="homeheadimg" src="../images/student.jpg" alt="studying">
+        <img id="homeheadimg" src="{{ url_for('static', filename='images/student.jpg')}}" alt="studying">
         <div id="headimgtext">
             <h1>LearnX</h1>
             <br>
