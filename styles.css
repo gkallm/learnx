@@ -114,7 +114,7 @@ nav {
     width: 300px;
     font-size: 1.3em;
     border-radius: 10px;
-    background-color: black;
+    background-color: darkseagreen;
     color: white;
 }
 
@@ -139,7 +139,7 @@ nav {
 
 .card {
     width: calc(95%);
-    background-color: black;
+    background-color: darkseagreen;
     color: white;
     padding: 15px;
     border-radius: 10px;
@@ -153,12 +153,12 @@ nav {
     height: 50px;
     border-radius: 10px;
     font-size: 1.4em;
-    color: white;
-    background-color: gray;
+    color: black;
+    background-color: floralwhite;
 }
 
 button:hover {
-    background-color: dimgray;
+    background-color: beige;
     cursor: pointer;
 }
 
