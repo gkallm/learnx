@@ -3,6 +3,7 @@
     --fontOp2: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     --fontOp3: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     --fontOp4: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    --navcolor: lavender
 }
 
 * {
@@ -12,7 +13,7 @@
 }
 
 nav {
-    background-color: black;
+    background-color: lavenderblush;
     height: 10vh;
     width: 100%;
     display: flex;
