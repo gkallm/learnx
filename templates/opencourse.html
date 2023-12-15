@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LearnX | Home</title>
-    <link href="styles.css" rel="stylesheet" type="text/css">
-    <script src="script.js" type="text/javascript"></script>
+    <link href="/static/styles.css" rel="stylesheet" type="text/css">
+    <script src="/static/script.js" type="text/javascript"></script>
 </head>
 <body>
     <nav id="bignav">
@@ -23,7 +23,23 @@
             <a href="profile.html"><img src="../images/account.jpg" alt="profile picture" id="profilepic"></a>
         </div>
     </nav>
-    <div id="classesdiv">
+    <div id="maincoursediv">
+        <div id="courseheader">
+            <h1>{{ courseName }}</h1>
+            <br>
+            <br>
+            <p>{{ courseDescription }}</p>
+            <br>
+            <button id="join">Start Course</button>
+        </div>
+        <div id="courseinfo">
+            <h2>Course Outline</h2>
+            <br>
+            <details id="outlinetemplate">
+                <summary>{{ subjectNames }}</summary>
+                <p>{{ subjectDescriptions }}</p>
+            </details>
+        </div>
     </div>
     <footer>
         <div id="columnhold">
